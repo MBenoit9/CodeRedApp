@@ -17,6 +17,11 @@ public class MapsActivity extends FragmentActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maps);
         setUpMapIfNeeded();
+
+        if(mMap != null)
+        {
+            mMap.setMyLocationEnabled(true);
+        }
     }
 
     @Override
